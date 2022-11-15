@@ -1,13 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins&family=Quicksand:wght@400;500;600;700&display=swap');
+
 *{
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 214, 214);
+}
+
+
+/* Navbar */
+.container-nav{
+    width: 100%;
+    background-color: white;
+}
+nav{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+nav li{
+    margin-right: 40px;
+}
+.home{
+    font-weight: bold;
+}
+nav a{
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: white;
+    background-color: #0f172a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logo{
+    width: 50px;
+}
+.btn-contact{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #334155;
+    border: none;
+    border-radius: 10px;
+    color: white ;
+    transition: 0.5s;
+    border: 2px solid white;
+}
+.btn-contact:hover{
+    border: 2px solid #334155;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #334155;
 }
 
 
 /* Container */
 .container {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 25px;
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 14px 11px 21px 0px rgba(135,126,126,0.75);
+    justify-content: center;
+}
+
+/* Container Content */
+.container-content{
+    width: 55%;
+    margin-top: 20px;
 }
 
 
@@ -25,27 +107,36 @@
     padding: 10px;
     background-color: #334155;
     border: none;
-    display: block;
     border-radius: 30px;
     color: white ;
+    transition: 0.5s;
+    border: 2px solid white;
+}
+.contact:hover{
+    border: 2px solid #334155;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #334155;
 }
 .download-cv{
     margin-top: 10px;
     width: 150px;
     padding: 10px;
     border: none;
-    display: block;
+    transition: 0.5s;
     border-radius: 30px;
 }
 .download-cv:hover{
+    color: white;
     background-color: #0f172a;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Icon */
 .icons{
     width: 40%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -57,10 +148,19 @@
     border-radius: 40%;
     padding: 10px;
 }
+icons a img:hover{
+    background-color: white;
+}
+
+/* Container-aside */
+.container-aside{
+    width: 45%;
+}
+
 
 /* Aside */
 .aside{
-    width: 50%;
+    width: 300px;
     margin: auto;
     text-align: center;
     border-radius: 20px;
@@ -70,5 +170,46 @@
 .aside img{
     width: 100%;
     object-fit: cover;
+
+}
+
+/* Form */
+.form{
+    width: 576px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.form h1{
+    text-align: center;
+}
+.form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.form select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.form textarea{
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-submit{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.form button{
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #0f172a;
+    border-radius: 10px;
+    border: none;
 
 }
